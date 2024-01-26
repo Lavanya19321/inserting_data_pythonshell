@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> employee table attributes</h1>
+        <table>
+            <tr>
+                <th>pk no</th>
+                <th>ename</th>
+                <th>esal</th>
+                <th>edate</th>
+                <th>dept_no</th>
+            </tr>
+            {% for i in employee %}
+            <tr>
+                <td>{{i.pk}}</td>
+                <td>{{i.ename}}</td>
+                <td>{{i.esal}}</td>
+                <td>{{i.edate}}</td>
+                <td>{{i.dept_no}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>
